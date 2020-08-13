@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhập vào số a :");
+        let b = prompt("Nhập vào số b :");
+        let c = prompt("Nhập vào số c :");
+
+        if (a == 0){
+            let nghiem = -b/c;
+            alert("Phương trình có 1 nghiệm X = " + nghiem);
+        }else {
+            let delta = b*b - 4*a*c;
+            if (delta > 0){
+                let nghiem1 = ((-b + Math.sqrt(delta)/(2*a)));
+                let nghiem2 = ((-b - Math.sqrt(delta)/(2*a)));
+                alert("Phương trình có 2 nghiệm : " + nghiem1 + nghiem2);
+            }else if(delta < 0){
+                let nghiemkep = (-b)/(2*a);
+                alert("Phương trình có nghiệm kép : " + nghiemkep);
+            }
+        }
+    </script>
+</body>
+</html>

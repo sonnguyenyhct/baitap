@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập vào số a :"));
+        let b = parseFloat(prompt("Nhập vào số b :"));
+        if (Number.isInteger(a) === true && Number.isInteger(b) === true && a>0 && b>0 && a%b === 0){
+            alert("a chia hết cho b");
+        }else if (Number.isInteger(a) !== true && Number.isInteger(b) !== true && a>0 && b>0 && a%b !== 0) {
+            alert("a không chia hết cho b");
+        }else {
+            alert("Hãy nhập số nguyên dương");
+        }
+    </script>
+</body>
+</html>
