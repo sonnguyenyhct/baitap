@@ -19,9 +19,11 @@
                 let nghiem1 = ((-b + Math.sqrt(delta)/(2*a)));
                 let nghiem2 = ((-b - Math.sqrt(delta)/(2*a)));
                 alert("Phương trình có 2 nghiệm : " + nghiem1 + nghiem2);
-            }else if(delta < 0){
+            }else if(delta == 0){
                 let nghiemkep = (-b)/(2*a);
                 alert("Phương trình có nghiệm kép : " + nghiemkep);
+            }else if (delta < 0){
+                alert("Phương trình vô nghiệm");
             }
         }
     </script>
